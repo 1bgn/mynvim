@@ -9,16 +9,20 @@ return {
       require("flutter-tools").setup {
         -- (uncomment below line for windows only)
         -- flutter_path = "home/flutter/bin/flutter.bat",
-        device = "Pixel_3a_API_34_extension_level_7_arm64-v8a",
         dev_tools = {
           autostart = true, -- autostart devtools server if not detected
           auto_open_browser = true, -- Automatically opens devtools in the browser
+        },
+        outline = {
+          open_cmd = "30vnew", -- command to use to open the outline buffer
+          auto_open = false, -- if true this will open the outline automatically when it is first populated
         },
         ui = {
           border = "rounded",
         },
         decorations = {
           statusline = {
+            project_config = true,
             -- set to true to be able use the 'flutter_tools_decorations.app_version' in your statusline
             -- this will show the current version of the flutter app from the pubspec.yaml file
             app_version = true,
@@ -29,6 +33,10 @@ return {
             -- set to true to be able use the 'flutter_tools_decorations.project_config' in your statusline
             -- this will show the currently selected project configuration
           },
+        },
+        closing_tags = {
+
+          enabled = true, -- set to false to disable
         },
         lsp = {
           --   color = { -- show the derived colours for dart variables
