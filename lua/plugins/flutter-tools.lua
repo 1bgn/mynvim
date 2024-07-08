@@ -4,6 +4,7 @@ return {
   {
     "akinsho/flutter-tools.nvim",
     dependencies = { "nvim-lua/plenary.nvim", "stevearc/dressing.nvim" },
+    lazy = false,
     config = function()
       require("flutter-tools").setup {
         -- (uncomment below line for windows only)
@@ -12,6 +13,9 @@ return {
         dev_tools = {
           autostart = true, -- autostart devtools server if not detected
           auto_open_browser = true, -- Automatically opens devtools in the browser
+        },
+        ui = {
+          border = "rounded",
         },
         decorations = {
           statusline = {
