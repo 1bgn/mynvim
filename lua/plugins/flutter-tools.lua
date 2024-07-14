@@ -10,8 +10,8 @@ return {
         -- (uncomment below line for windows only)
         -- flutter_path = "home/flutter/bin/flutter.bat",
         dev_tools = {
-          autostart = true, -- autostart devtools server if not detected
-          auto_open_browser = true, -- Automatically opens devtools in the browser
+          autostart = false, -- autostart devtools server if not detected
+          auto_open_browser = false, -- Automatically opens devtools in the browser
         },
         outline = {
           open_cmd = "30vnew", -- command to use to open the outline buffer
