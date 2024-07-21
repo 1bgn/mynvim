@@ -1,6 +1,7 @@
 return {
   -- for DAP support
   { "mfussenegger/nvim-dap" },
+  { "folke/noice.nvim", enabled = false },
   {
     "akinsho/flutter-tools.nvim",
     dependencies = { "nvim-lua/plenary.nvim", "stevearc/dressing.nvim" },
